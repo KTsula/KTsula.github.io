@@ -15,18 +15,21 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="styles.css" />
-    <title>Raj Shekhar</title>
+    <title>Keti Sulamanidze</title>
   </head>
   <body class="light" id="top">
     <header class="header center">
       <h3>
         <a href="https://rajshekhar26.github.io/cleanfolio-minimal" class="link"
-          >RS.</a
+          >K. Sula</a
         >
       </h3>
 
       <nav class="nav center">
         <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#education">Education</a>
+          </li>
           <li class="nav__list-item">
             <a class="link link--nav" href="#projects">Projects</a>
           </li>
@@ -54,36 +57,61 @@
 
     <main>
       <!-- About -->
-      <div class="about center">
-        <h1>Hi, I am <span class="about__name">Raj Shekhar.</span></h1>
-        <h2 class="about__role">A Front end Developer.</h2>
-        <p class="about__desc">
-          Consectetur neque sed quam molestiae consectetur nesciunt sit alias
-          Vitae libero perferendis reprehenderit optio veritatis Accusantium at
-          voluptatum cumque temporibus et Explicabo iste porro quis numquam
-          distinctio Repellendus adipisci nam perferendis amet eaque hic
-          Voluptates
-        </p>
+      <div class = "two_column">
+        <div class="about">
+          <h1>Hi, I am <span class="about__name">Keti Sulamanidze.</span></h1>
+          <h2 class="about__role">Computer Science and AI enthusiast</h2>
+          <p class="about__desc">
+            Hello! I am a second year undergraduate student studying Computer Science & AI. 
+            I am passionate about coding, mathematics, and entrepreneurship. In my free time 
+            you will find me either learning a new skill (completing a course, reading a book), 
+            challenging myself (participating in competitions, doing competitive programming, 
+            building a new project), or researching new business ideas.
+            <br>
+            <br>
+            <h3 style="margin-bottom: 0;" id="education">Education</h3>
+            <br>
+            <p class="about__desc" style="margin-bottom: 0; margin-top: 0;">
+              <ul>
+                <h5>IE University</h5>
+                <li>Madrid, Spain</li>
+                <li>Bachelor in Computer Science and Artificial Intelligence (GPA: 9.7/10.0)</li>
+                <li>2021 - present</li>
+                <li>IE-Parents "Young Talented Leaders Scholarship program" - Full Ride</li>
+              </ul>
+              <br>
+              <ul>
+                <h5>V. Komarov Tbilisi School of Physics & Mathematics N199</h5>
+                <li>Tbilisi, Georgia</li>
+                <li>Middle and High School Student (GPA: 10/10)</li>
+                <li>2014 - 2020</li>
+              </ul>
+            </p>
+          </p>
 
-        <div class="about__contact center">
-          <a href="https://example.com">
-            <span class="btn btn--outline">Resume</span>
-          </a>
+          <div class="about__contact center">
 
-          <a
-            href="https://github.com/rajshekhar26"
-            aria-label="github"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a>
+            <a
+              href="https://github.com/KTsula"
+              aria-label="github"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
 
-          <a
-            href="https://linkedin.com/in/rajshekhar26"
-            aria-label="linkedin"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-linkedin"></i>
+            <a
+              href="https://www.linkedin.com/in/keti-sulamanidze-ba64061a2/"
+              aria-label="linkedin"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+        <div class = "coder center">
+          
+          <a href="https://storyset.com/communication" style="margin: 0;">
+            <img src = "img/coder.svg" alt="My coder SVG" style="width:100%; height:100%;"/>
           </a>
         </div>
       </div>
@@ -94,27 +122,55 @@
 
         <div class="projects__grid">
           <div class="project">
-            <h3>Project 1</h3>
+            <h3>Mobile App with Expo (React Native) and Firebase</h3>
             <p class="project__description">
-              Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
-              sapiente debitis labore sed ipsam Mollitia repellat illum quod
-              unde beatae Quis
+              A simple mobile app stores and displays a big 
+              number of notes in an organized manner, helpful for Georgian High Schoolers to pass Georgian 
+              National Exams.
+              <br>
+              It is published on <h6>Google Play Store,</h6> has built in ads and is available for Android at the moment.
+              <br>
+              <br>
+              The whole stack from start to finish was built solely by me.
             </p>
             <ul class="project__stack">
-              <li class="project__stack-item">SASS</li>
-              <li class="project__stack-item">TypeScript</li>
-              <li class="project__stack-item">React</li>
+              <li class="project__stack-item">Expo framework</li>
+              <li class="project__stack-item">Firebase</li>
+              <li class="project__stack-item">Javascript</li>
             </ul>
 
             <a
-              href="https://github.com"
+              href="https://github.com/KTsula/Simple-Expo-app-with-firebase-and-react_navigation"
               aria-label="source code"
               class="link link--icon"
             >
               <i aria-hidden="true" class="fab fa-github"></i>
             </a>
+          </div>
+
+          <div class="project">
+            <h3>Laser Game: C++ & Arduino</h3>
+            <p class="project__description">
+              A laser shooting game that was build as a final project for a university 
+              course in Physics. The game is built with Arduino and C++. All of its details 
+              along with code were published on <h6>Arduino Project Hub</h6>.
+              <br> 
+              You can also see a demo of the game on <h6>YouTube</h6>.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">C++</li>
+              <li class="project__stack-item">Arduino IDE</li>
+              <li class="project__stack-item">Tinkercad</li>
+            </ul>
             <a
-              href="https://example.com"
+              href="https://create.arduino.cc/projecthub/ksulamanidze/hit-the-target-shooting-game-5bb1b9"
+              aria-label="published post"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+            <a
+              href="https://youtube.com/shorts/V-lWhBqz2jg?feature=share"
               aria-label="live preview"
               class="link link--icon"
             >
@@ -123,60 +179,23 @@
           </div>
 
           <div class="project">
-            <h3>Project 2</h3>
+            <h3>Escape Room Game with Python</h3>
             <p class="project__description">
-              Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
-              sapiente debitis labore sed ipsam Mollitia repellat illum quod
-              unde beatae Quis
+              A python graphical game built for a university course. It uses graphics.py library
+              and is a simple timed escape room game.
             </p>
+            <br>
+            <img src="img/escroom.png" style="width: 90%; border-radius: 20%;"/>
             <ul class="project__stack">
-              <li class="project__stack-item">SASS</li>
-              <li class="project__stack-item">TypeScript</li>
-              <li class="project__stack-item">React</li>
+              <li class="project__stack-item">Python</li>
             </ul>
 
             <a
-              href="https://github.com"
+              href="https://github.com/KTsula/EscapeRoom-in-Python"
               aria-label="source code"
               class="link link--icon"
             >
               <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://example.com"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-
-          <div class="project">
-            <h3>Project 3</h3>
-            <p class="project__description">
-              Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
-              sapiente debitis labore sed ipsam Mollitia repellat illum quod
-              unde beatae Quis
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">SASS</li>
-              <li class="project__stack-item">TypeScript</li>
-              <li class="project__stack-item">React</li>
-            </ul>
-
-            <a
-              href="https://github.com"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://example.com"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
             </a>
           </div>
         </div>
@@ -186,25 +205,26 @@
       <section class="section skills" id="skills">
         <h2 class="section__title">Skills</h2>
         <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">Python</li>
+          <li class="skills__list-item btn btn--plain">C++</li>
+          <li class="skills__list-item btn btn--plain">R</li>
+          <li class="skills__list-item btn btn--plain">ML model building</li>
+          <li class="skills__list-item btn btn--plain">Flutter</li>
+          <li class="skills__list-item btn btn--plain">SQL</li>
+          <li class="skills__list-item btn btn--plain">React Native</li>
+          <li class="skills__list-item btn btn--plain">Firebase</li>
+          <li class="skills__list-item btn btn--plain">Git</li>
+          <li class="skills__list-item btn btn--plain">Tensorflow</li>
           <li class="skills__list-item btn btn--plain">HTML</li>
           <li class="skills__list-item btn btn--plain">CSS</li>
-          <li class="skills__list-item btn btn--plain">SCSS</li>
-          <li class="skills__list-item btn btn--plain">JavaScript</li>
-          <li class="skills__list-item btn btn--plain">TypeScript</li>
-          <li class="skills__list-item btn btn--plain">React</li>
-          <li class="skills__list-item btn btn--plain">Redux</li>
-          <li class="skills__list-item btn btn--plain">Git</li>
-          <li class="skills__list-item btn btn--plain">Material UI</li>
-          <li class="skills__list-item btn btn--plain">Jest</li>
-          <li class="skills__list-item btn btn--plain">Enzyme</li>
-          <li class="skills__list-item btn btn--plain">CI/CD</li>
+          <li class="skills__list-item btn btn--plain">Javascript</li>
         </ul>
       </section>
 
       <!-- Contact -->
       <section class="section contact center" id="contact">
         <h2 class="section__title">Contact</h2>
-        <a href="mailto:rjshekhar.official@gmail.com">
+        <a href="mailto:ketisulamanidze@gmail.com">
           <span class="btn btn--outline">Email me</span>
         </a>
       </section>
@@ -212,10 +232,10 @@
 
     <footer class="footer">
       <a
-        href="https://github.com/rajshekhar26/cleanfolio-minimal"
+        href="https://github.com/KTsula/personal-Portfolio-Website"
         class="link footer__link"
       >
-        Created By Raj Shekhar
+        by Keti Sulamanidze
       </a>
     </footer>
 
