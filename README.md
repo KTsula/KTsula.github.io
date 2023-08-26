@@ -4,7 +4,7 @@ A clean and simple portfolio template built with plain HTML, CSS and JavaScript.
 
 ## Preview
 
-[See Live](https://https://ktsula.github.io/)
+[See Live](https://ktsula.github.io/)
 
 ## License
 
