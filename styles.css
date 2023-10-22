@@ -331,6 +331,9 @@ main {
   font-weight: 500;
   font-size: 0.8rem;
   color: var(--clr-fg-alt);
+  border: 1px solid var(--clr-fg-alt);
+  padding: 0.3em 0.5em;
+  border-radius: 5px;
 }
 
 .project .link--icon {
@@ -431,4 +434,91 @@ main {
   .scroll-container {
     display: none;
   }
+}
+/* Add this to your existing CSS file */
+
+.skills__categories {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skills__category {
+  flex-basis: 30%;
+  /* Adjust as needed */
+  margin-bottom: 2em;
+  /* Adjust as needed */
+  text-align: center;
+}
+
+.category__title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5em;
+  color: var(--clr-primary);
+  /* Adjust color as needed */
+}
+
+.skills__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills__list-item {
+  margin-bottom: 0.5em;
+}
+
+.container__item {
+  background-color: var(--clr-bg-alt);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+
+.container__left {
+  flex: 2;
+}
+.container__right {
+  flex: 1;
+  text-align: righ
+}
+
+.container__title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5em;
+}
+
+.container__info {
+  margin-bottom: 0.3em;
+  justify-content: space-between;
+}
+
+.section.container {
+  margin-top: 3em;
+}
+
+.container__meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container__dates,
+.container__gpa {
+  text-align: right;
+}
+
+.experience__description {
+  list-style-type: disc;
+  /* Use bullet points */
+  margin: 0;
+  /* Remove default margin */
+  padding-left: 1.5em;
+  /* Add some indentation for the bullets */
+}
+
+.experience__description li {
+  margin-bottom: 0.5em;
+  /* Add some space between each bullet point */
 }

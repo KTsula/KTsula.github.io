@@ -62,51 +62,23 @@
           <h1>Hi, I am <span class="about__name">Keti Sulamanidze.</span></h1>
           <h2 class="about__role">Computer Science and AI enthusiast</h2>
           <p class="about__desc">
-            Hello! I am a second year undergraduate student studying Computer Science & AI. 
+            Hello! I am a third year undergraduate student studying Computer Science & AI. 
             I am passionate about coding, mathematics, and entrepreneurship. In my free time 
             you will find me either learning a new skill (completing a course, reading a book), 
             challenging myself (participating in competitions, doing competitive programming, 
             building a new project), or researching new business ideas.
             <br>
+            <div class="about__contact center">
+              <a href="https://github.com/KTsula" aria-label="github" class="link link--icon">
+                <i aria-hidden="true" class="fab fa-github"></i>
+              </a>
+            
+              <a href="https://www.linkedin.com/in/keti-sulamanidze-ba64061a2/" aria-label="linkedin" class="link link--icon">
+                <i aria-hidden="true" class="fab fa-linkedin"></i>
+              </a>
+            </div>
             <br>
-            <h3 style="margin-bottom: 0;" id="education">Education</h3>
-            <br>
-            <p class="about__desc" style="margin-bottom: 0; margin-top: 0;">
-              <ul>
-                <h5>IE University</h5>
-                <li>Madrid, Spain</li>
-                <li>Bachelor in Computer Science and Artificial Intelligence (GPA: 9.7/10.0)</li>
-                <li>2021 - present</li>
-                <li>IE-Parents "Young Talented Leaders Scholarship program" - Full Ride</li>
-              </ul>
-              <br>
-              <ul>
-                <h5>V. Komarov Tbilisi School of Physics & Mathematics N199</h5>
-                <li>Tbilisi, Georgia</li>
-                <li>Middle and High School Student (GPA: 10/10)</li>
-                <li>2014 - 2020</li>
-              </ul>
-            </p>
           </p>
-
-          <div class="about__contact center">
-
-            <a
-              href="https://github.com/KTsula"
-              aria-label="github"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/keti-sulamanidze-ba64061a2/"
-              aria-label="linkedin"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-linkedin"></i>
-            </a>
-          </div>
         </div>
         <div class = "coder center">
           
@@ -115,30 +87,90 @@
           </a>
         </div>
       </div>
+      <!-- Education -->
+      <section id="container" class="section container">
+        <h2 class="section__title">Education</h2>
+      
+        <div class="container__item">
+          <div class="container__left">
+            <h3 class="container__title">IE University</h3>
+            <p class="container__info">Madrid, Spain</p>
+            <p class="container__info">IE-Parents "Young Talented Leaders Scholarship program" - Full Ride</p>
+          </div>
+          <div class="container__right">
+            <p class="container__info">2021 - 2025</p>
+            <p class="container__info">GPA: 9.65/10.0</p>
+          </div>
+        </div>
+      
+        <div class="container__item">
+          <div class="container__left">
+            <h3 class="container__title">V. Komarov Tbilisi School of Physics & Mathematics N199</h3>
+            <p class="container__info">Tbilisi, Georgia</p>
+          </div>
+          <div class="container__right">
+            <p class="container__info">2014 - 2020</p>
+            <p class="container__info">GPA: 10.0/10.0</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experiences -->
+      <section id="container" class="section container">
+        <h2 class="section__title">Experiences</h2>
+      
+        <!-- Experience Item -->
+        <div class="container__item">
+          <!-- Left Column -->
+          <div class="container__left">
+            <h3 class="container__title">Google</h3>
+            <p class="container__position">STEP <b>Software Engineer Intern</b> in Google Compute Engine team</p>
+            <ul class="experience__description">
+              <li>Implemented a Fan-in scenario for a tracing system in GCE control plane, tracing 1,000,000+ new requests daily.
+              </li>
+              <li>Applied a mechanism to pass CLI flags to executable binary, making the behavior user definable at runtime.</li>
+              <li>Designed and added tables to a UI dashboard, displaying details of Fan-in traces utilizing Protocol Buffer Text
+                Format and SQL queries.</li>
+              <li>Used a remote cloud desktop for building, running and testing (unit + integration) the code. Utilized Java mainly.
+              </li>
+            </ul>
+          </div>
+      
+          <!-- Right Column -->
+          <div class="container__right">
+            <p class="container__dates">July 2023 – September 2023</p>
+          </div>
+        </div>
+      
+        <!-- Add more experience items as needed -->
+      
+      </section>
+
+
 
       <!-- Projects -->
       <section id="projects" class="section projects">
         <h2 class="section__title">Projects</h2>
 
         <div class="projects__grid">
+          <!-- ABITURGEO -->
           <div class="project">
             <h3>Mobile App with Expo (React Native) and Firebase</h3>
-            <p class="project__description">
-              A simple mobile app stores and displays a big 
-              number of notes in an organized manner, helpful for Georgian High Schoolers to pass Georgian 
-              National Exams.
-              <br>
-              It is published on <h6>Google Play Store,</h6> has built in ads and is available for Android at the moment.
-              <br>
-              <br>
-              The whole stack from start to finish was built solely by me.
-            </p>
             <ul class="project__stack">
               <li class="project__stack-item">Expo framework</li>
               <li class="project__stack-item">Firebase</li>
               <li class="project__stack-item">Javascript</li>
             </ul>
-
+            <p class="project__description">
+              A simple mobile app stores and displays a big 
+              number of notes in an organized manner, helpful for Georgian High Schoolers to pass Georgian 
+              National Exams.
+              <br>
+              It is published on <h6>Google Play Store,</h6> has built in ads and is available for Android at the moment. 500+ downloads.
+              <br>
+              <br>
+              The whole stack from start to finish was built solely by me.
+            </p>
             <a
               href="https://github.com/KTsula/Simple-Expo-app-with-firebase-and-react_navigation"
               aria-label="source code"
@@ -146,22 +178,87 @@
             >
               <i aria-hidden="true" class="fab fa-github"></i>
             </a>
+            <a href="https://play.google.com/store/apps/details?id=com.abitur.AbiturGeo&pli=1"
+              aria-label="Play Store" class="link link--icon">
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
           </div>
-
+          <!-- DEVOPS -->
+          <div class="project">
+            <h3>Full stack project - Banking Software</h3>
+            <ul class="project__stack">
+              <li class="project__stack-item">DevOps</li>
+              <li class="project__stack-item">Github Actions</li>
+              <li class="project__stack-item">Azure</li>
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">SQLAlchemy</li>
+              <li class="project__stack-item">Vue.js</li>
+              <li class="project__stack-item">Flask</li>
+              <li class="project__stack-item">Bicep</li>
+            </ul>
+            <p class="project__description">
+              Built upon the provided university class assignment in DevOps and deployed 
+              <a href="https://github.com/KTsula/Banking-Software-Back-End" style="color:blue">
+                Backend,
+              </a>
+              <a href="https://github.com/KTsula/Banking-Software-Front-End" style="color:blue">
+                Frontend,
+              </a>
+              and
+              <a href="https://github.com/KTsula/Banking-Software-Infra" style="color:blue">
+                Infrastructure
+              </a>
+              of a simple banking software. 
+              <br>
+              Deployed <b>Development</b> and <b>User Acceptance Testing</b> environments on Azure using Github Actions and Bicep.
+              <br>
+              <br>
+            </p>
+          </div>
+          <!-- GIVEEZY -->
+          <div class="project">
+            <h3>Mobile App with Flutter</h3>
+            <ul class="project__stack">
+              <li class="project__stack-item">Flutter</li>
+              <li class="project__stack-item">Dart</li>
+              <li class="project__stack-item">Firebase</li>
+            </ul>
+            <p class="project__description">
+              A mobile app built for Google Solution Challenge (prototype) built in a team of 2, which allows donors to create challenges for charities and for helpers to participate in those challenges to raise money for
+              those charities. Currently, the challenges offered are solving LeetCode problems and taking math quizzes. The app
+              doesn't support money transfer yet.
+              <br>
+              <br>
+              You can view a video explanation submitted for the challenge on
+            <a href="https://www.youtube.com/watch?v=rN0bz4BHxJs" style="color:blue">
+              Youtube.
+            </a>
+            <br>
+            <br>
+            </p>         
+            <a href="https://github.com/justzuka/keti_zuka" aria-label="source code"
+              class="link link--icon">
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+          <!-- ARDUINO -->
           <div class="project">
             <h3>Laser Game: C++ & Arduino</h3>
-            <p class="project__description">
-              A laser shooting game that was build as a final project for a university 
-              course in Physics. The game is built with Arduino and C++. All of its details 
-              along with code were published on <h6>Arduino Project Hub</h6>.
-              <br> 
-              You can also see a demo of the game on <h6>YouTube</h6>.
-            </p>
             <ul class="project__stack">
               <li class="project__stack-item">C++</li>
               <li class="project__stack-item">Arduino IDE</li>
               <li class="project__stack-item">Tinkercad</li>
             </ul>
+            <p class="project__description">
+              A laser shooting game that was built as a final project for a university 
+              course in Physics. The game is built with Arduino and C++. All of its details 
+              along with code were published on <h6>Arduino Project Hub.</h6>
+              <br> 
+              You can also see a demo of the game on 
+              <a href="https://youtube.com/shorts/V-lWhBqz2jg" style="color:blue">
+                Youtube.
+              </a>
+            </p>
             <a
               href="https://create.arduino.cc/projecthub/ksulamanidze/hit-the-target-shooting-game-5bb1b9"
               aria-label="published post"
@@ -169,27 +266,52 @@
             >
               <i aria-hidden="true" class="fas fa-external-link-alt"></i>
             </a>
-            <a
-              href="https://youtube.com/shorts/V-lWhBqz2jg?feature=share"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </div>
+          <!-- Hues and Cues -->
+          <div class="project">
+            <h3>Creating Flashcards with OpenAI API and Streamlit</h3>
+            <ul class="project__stack">
+              <li class="project__stack-item">OpenAI API</li>
+              <li class="project__stack-item">Streamlit</li>
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">Prompt Engineering</li>
+            </ul>
+            <p class="project__description">
+              The project was created in a collaboration with a friend. It uses OpenAI API to generate flashcards from a given pdf file. The user can choose the number of flashcards to be generated. The generated flashcards are donwloadable in usable yankee format txt.
+            </p>
+            <br>
+            <img src="img/flashcards.png" style="width: 90%;" />
+            <a href="https://github.com/KTsula/Hues_and_cues_game-DSA_practice" aria-label="source code" class="link link--icon">
+              <i aria-hidden="true" class="fab fa-github"></i>
             </a>
           </div>
-
+          <!-- Hues and Cues -->
           <div class="project">
             <h3>Escape Room Game with Python</h3>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+            </ul>
+            <p class="project__description">
+              A python graphical game built for a university course 'Algorithms and Data Structures'.<br>The game uses a mix of algorithms - <b>quicksort, binary search</b> - and data structures. It includes comprehensive comments with <b>time complexity analysis</b> of functions. The game utilizes a simple random bot.
+            </p>
+            <br>
+            <img src="img/hues.png" style="width: 90%; border-radius: 20%;" />
+            <a href="https://github.com/KTsula/Hues_and_cues_game-DSA_practice" aria-label="source code" class="link link--icon">
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+          <!-- ESCAPE ROOM -->
+          <div class="project">
+            <h3>Escape Room Game with Python</h3>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+            </ul>
             <p class="project__description">
               A python graphical game built for a university course. It uses graphics.py library
               and is a simple timed escape room game.
             </p>
             <br>
-            <img src="img/escroom.png" style="width: 90%; border-radius: 20%;"/>
-            <ul class="project__stack">
-              <li class="project__stack-item">Python</li>
-            </ul>
-
+            <img src="img/escroom.png" style="width: 90%;"/>
             <a
               href="https://github.com/KTsula/EscapeRoom-in-Python"
               aria-label="source code"
@@ -203,22 +325,39 @@
 
       <!-- Skills -->
       <section class="section skills" id="skills">
-        <h2 class="section__title">Skills</h2>
-        <ul class="skills__list">
-          <li class="skills__list-item btn btn--plain">Python</li>
-          <li class="skills__list-item btn btn--plain">C++</li>
-          <li class="skills__list-item btn btn--plain">R</li>
-          <li class="skills__list-item btn btn--plain">ML model building</li>
-          <li class="skills__list-item btn btn--plain">Flutter</li>
-          <li class="skills__list-item btn btn--plain">SQL</li>
-          <li class="skills__list-item btn btn--plain">React Native</li>
-          <li class="skills__list-item btn btn--plain">Firebase</li>
-          <li class="skills__list-item btn btn--plain">Git</li>
-          <li class="skills__list-item btn btn--plain">Tensorflow</li>
-          <li class="skills__list-item btn btn--plain">HTML</li>
-          <li class="skills__list-item btn btn--plain">CSS</li>
-          <li class="skills__list-item btn btn--plain">Javascript</li>
-        </ul>
+        <h2 class="section__title">Technical Skills</h2>
+        <div class="skills__categories">
+          <div class="skills__category">
+            <h3 class="category__title">Programming Languages</h3>
+            <ul class="skills__list">
+              <li class="skills__list-item btn btn--plain">C++</li>
+              <li class="skills__list-item btn btn--plain">Python</li>
+              <li class="skills__list-item btn btn--plain">Java</li>
+              <li class="skills__list-item btn btn--plain">R</li>
+              <li class="skills__list-item btn btn--plain">SQL</li>
+            </ul>
+          </div>
+      
+          <div class="skills__category">
+            <h3 class="category__title">Frameworks</h3>
+            <ul class="skills__list">
+              <li class="skills__list-item btn btn--plain">React Native</li>
+              <li class="skills__list-item btn btn--plain">Flutter</li>
+              <li class="skills__list-item btn btn--plain">Flask</li>
+            </ul>
+          </div>
+      
+          <div class="skills__category">
+            <h3 class="category__title">Libraries, Tools & Platforms</h3>
+            <ul class="skills__list">
+              <li class="skills__list-item btn btn--plain">Git</li>
+              <li class="skills__list-item btn btn--plain">Firebase</li>
+              <li class="skills__list-item btn btn--plain">ML model building</li>
+              <li class="skills__list-item btn btn--plain">Tensorflow</li>
+              <li class="skills__list-item btn btn--plain">Azure</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <!-- Contact -->
