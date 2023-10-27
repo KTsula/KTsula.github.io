@@ -60,4 +60,40 @@ const scrollUp = () => {
 	}
 }
 
+// Add this to your existing script.js file or within <script> tags in your HTML file
+
+document.getElementById('see-more').addEventListener('click', function() {
+	const hiddenExperiences = document.getElementById('hidden-experiences');
+
+	if (hiddenExperiences.style.display === 'none') {
+		hiddenExperiences.style.display = 'block';
+		this.textContent = 'See Less';
+	} else {
+		hiddenExperiences.style.display = 'none';
+		this.textContent = 'See More';
+	}
+
+	// Scroll to the "See More" button after toggling
+	const seeMoreButton = document.getElementById('see-more');
+	seeMoreButton.scrollIntoView({ behavior: 'smooth' });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+	const seeMoreButton = document.getElementById('see-more-projects');
+	const projectsSection = document.getElementById('projects');
+
+	seeMoreButton.addEventListener('click', function() {
+		if (projectsSection.classList.contains('show-three')) {
+		projectsSection.classList.remove('show-three');
+		seeMoreButton.textContent = 'Show Less';
+		} else {
+		projectsSection.classList.add('show-three');
+		seeMoreButton.textContent = 'Show More';
+		}
+	});
+});
+
+
+
+
 document.addEventListener('scroll', scrollUp)

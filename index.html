@@ -31,6 +31,9 @@
             <a class="link link--nav" href="#education">Education</a>
           </li>
           <li class="nav__list-item">
+            <a class="link link--nav" href="#experience">Experience</a>
+          </li>
+          <li class="nav__list-item">
             <a class="link link--nav" href="#projects">Projects</a>
           </li>
           <li class="nav__list-item">
@@ -88,7 +91,7 @@
         </div>
       </div>
       <!-- Education -->
-      <section id="container" class="section container">
+      <section id="education" class="section container">
         <h2 class="section__title">Education</h2>
       
         <div class="container__item">
@@ -116,8 +119,8 @@
       </section>
 
       <!-- Experiences -->
-      <section id="container" class="section container">
-        <h2 class="section__title">Experiences</h2>
+      <section id="experience" class="section container">
+        <h2 class="section__title">Professional Experience</h2>
       
         <!-- Experience Item -->
         <div class="container__item">
@@ -131,7 +134,7 @@
               <li>Applied a mechanism to pass CLI flags to executable binary, making the behavior user definable at runtime.</li>
               <li>Designed and added tables to a UI dashboard, displaying details of Fan-in traces utilizing Protocol Buffer Text
                 Format and SQL queries.</li>
-              <li>Used a remote cloud desktop for building, running and testing (unit + integration) the code. Utilized Java mainly.
+              <li>Used a remote cloud desktop for building, running and testing (unit + integration) the code. Mainly worked with Java programming language.
               </li>
             </ul>
           </div>
@@ -141,15 +144,75 @@
             <p class="container__dates">July 2023 – September 2023</p>
           </div>
         </div>
-      
-        <!-- Add more experience items as needed -->
-      
+        
+        <!-- Hidden Experience Items -->
+        <div id="hidden-experiences">
+        <!-- Experience Item -->
+        <div class="container__item">
+          <!-- Left Column -->
+          <div class="container__left">
+            <h3 class="container__title">INSPIRATION-Q</h3>
+            <p class="container__position">Quantum Software Developer Intern</p>
+            <ul class="experience__description">
+              <li>Built Python functions solving high scale combinatorial problems in exponentially shorter time than classical
+                approaches using Quadratic Unconstrained Binary Optimization (QUBO) solver APIs.</li>
+              <li>Created beginner-friendly documentations for 10+ NP-hard problems utilizing Quantum Inspired Algorithms.</li>
+            </ul>
+          </div>
+        
+          <!-- Right Column -->
+          <div class="container__right">
+            <p class="container__dates">July 2022 – May 2023</p>
+          </div>
+        </div>
+        <!-- Experience Item -->
+        <div class="container__item">
+          <!-- Left Column -->
+          <div class="container__left">
+            <h3 class="container__title">IEU LABS (collaboration with Consejo General del Notariado)</h3>
+            <p class="container__position">Data Science and Economics Intern</p>
+            <ul class="experience__description">
+              <li>Extracted relatively fraudulent cases from legal actions automating 90% by using k-means clustering
+                methodologies utilizing programming language R.</li>
+              <li>Determined a handful of important identifiers of suspicious activities from data with more than 600,000
+                entries.</li>
+            </ul>
+          </div>
+        
+          <!-- Right Column -->
+          <div class="container__right">
+            <p class="container__dates">January 2022 – June 2022</p>
+          </div>
+        </div>
+        <!-- Experience Item -->
+        <div class="container__item">
+          <!-- Left Column -->
+          <div class="container__left">
+            <h3 class="container__title">LEMONDO</h3>
+            <p class="container__position">Data Science Intern</p>
+            <ul class="experience__description">
+              <li>Programmed a customer pattern heatmap increasing the marketing team’s productivity by 50% under 3 months.</li>
+              <li>Developed and implemented in a web service a ML model that automated 100% of real estate price prediction
+                using Python, Flask, Keras, TensorFlow and Scikit-learn.</li>
+            </ul>
+          </div>
+        
+          <!-- Right Column -->
+          <div class="container__right">
+            <p class="container__dates">September 2020 – July 2021</p>
+          </div>
+        </div>
+        </div>
+        <!-- See More Button -->
+        <div class="see-more-container">
+          <button id="see-more" class="btn btn--plain">See More</button>
+        </div>
       </section>
 
 
 
       <!-- Projects -->
-      <section id="projects" class="section projects">
+      <section id="projects" class="section projects show-three">
         <h2 class="section__title">Projects</h2>
 
         <div class="projects__grid">
@@ -243,7 +306,7 @@
           </div>
           <!-- ARDUINO -->
           <div class="project">
-            <h3>Laser Game: C++ & Arduino</h3>
+            <h3>Hit the target Game</h3>
             <ul class="project__stack">
               <li class="project__stack-item">C++</li>
               <li class="project__stack-item">Arduino IDE</li>
@@ -259,6 +322,7 @@
                 Youtube.
               </a>
             </p>
+            <img src="img/target.png" style="width: 90%;" />
             <a
               href="https://create.arduino.cc/projecthub/ksulamanidze/hit-the-target-shooting-game-5bb1b9"
               aria-label="published post"
@@ -269,7 +333,7 @@
           </div>
           <!-- Flashcards -->
           <div class="project">
-            <h3>Creating Flashcards with OpenAI API and Streamlit</h3>
+            <h3>Automatically Generating Flashcards</h3>
             <ul class="project__stack">
               <li class="project__stack-item">OpenAI API</li>
               <li class="project__stack-item">Streamlit</li>
@@ -287,7 +351,7 @@
           </div>
           <!-- Hues and Cues -->
           <div class="project">
-            <h3>Escape Room Game with Python</h3>
+            <h3>Hues and Cues Game</h3>
             <ul class="project__stack">
               <li class="project__stack-item">Python</li>
             </ul>
@@ -295,14 +359,14 @@
               A python graphical game built for a university course 'Algorithms and Data Structures'.<br>The game uses a mix of algorithms - <b>quicksort, binary search</b> - and data structures. It includes comprehensive comments with <b>time complexity analysis</b> of functions. The game utilizes a simple random bot.
             </p>
             <br>
-            <img src="img/hues.png" style="width: 90%; border-radius: 20%;" />
+            <img src="img/hues.png" style="width: 100%;" />
             <a href="https://github.com/KTsula/Hues_and_cues_game-DSA_practice" aria-label="source code" class="link link--icon">
               <i aria-hidden="true" class="fab fa-github"></i>
             </a>
           </div>
           <!-- ESCAPE ROOM -->
           <div class="project">
-            <h3>Escape Room Game with Python</h3>
+            <h3>Escape Room Game</h3>
             <ul class="project__stack">
               <li class="project__stack-item">Python</li>
             </ul>
@@ -320,6 +384,9 @@
               <i aria-hidden="true" class="fab fa-github"></i>
             </a>
           </div>
+        </div>
+        <div class="see-more-container">
+          <button id="see-more-projects" class="btn btn--plain">See More</button>
         </div>
       </section>
 

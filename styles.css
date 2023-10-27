@@ -435,7 +435,6 @@ main {
     display: none;
   }
 }
-/* Add this to your existing CSS file */
 
 .skills__categories {
   display: flex;
@@ -445,9 +444,7 @@ main {
 
 .skills__category {
   flex-basis: 30%;
-  /* Adjust as needed */
   margin-bottom: 2em;
-  /* Adjust as needed */
   text-align: center;
 }
 
@@ -455,7 +452,6 @@ main {
   font-size: 1.2rem;
   margin-bottom: 0.5em;
   color: var(--clr-primary);
-  /* Adjust color as needed */
 }
 
 .skills__list {
@@ -511,14 +507,36 @@ main {
 
 .experience__description {
   list-style-type: disc;
-  /* Use bullet points */
   margin: 0;
-  /* Remove default margin */
   padding-left: 1.5em;
-  /* Add some indentation for the bullets */
 }
 
 .experience__description li {
   margin-bottom: 0.5em;
-  /* Add some space between each bullet point */
+}
+
+#hidden-experiences {
+  display: none;
+}
+
+.see-more-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn--plain {
+  margin: 0 auto;
+}
+
+#see-more {
+  font-size: 1rem;
+}
+
+.projects.show-three .project:nth-child(n+4) {
+  display: none;
+}
+
+.projects.show-three .see-more-container {
+  text-align: center;
+  margin-top: 1em;
 }
