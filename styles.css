@@ -341,9 +341,8 @@ main {
 }
 
 .skills__list {
-  max-width: 450px;
-  width: 95%;
-  margin: 0 auto;
+  list-style-type: none;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -457,10 +456,12 @@ main {
 .skills__list {
   list-style-type: none;
   padding: 0;
+  margin-top: 1em;
 }
 
 .skills__list-item {
-  margin-bottom: 0.5em;
+  padding: 0.9em 1.1em;
+  margin-bottom: 1em; 
 }
 
 .container__item {
@@ -477,7 +478,7 @@ main {
 }
 .container__right {
   flex: 1;
-  text-align: righ
+  text-align: right;
 }
 
 .container__title {
@@ -525,7 +526,7 @@ main {
 }
 
 .btn--plain {
-  margin: 0 auto;
+  margin: 0.5 auto;
 }
 
 #see-more {
@@ -539,4 +540,10 @@ main {
 .projects.show-three .see-more-container {
   text-align: center;
   margin-top: 1em;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
