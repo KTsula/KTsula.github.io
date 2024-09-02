@@ -63,9 +63,9 @@
       <div class = "two_column">
         <div class="about">
           <h1>Hi, I am <span class="about__name">Keti Sulamanidze.</span></h1>
-          <h2 class="about__role">Computer Science and AI enthusiast</h2>
+          <h2 class="about__role">Computer Science, AI, and Entrepreneurship Enthusiast</h2>
           <p class="about__desc">
-            Hello! I am a third year undergraduate student studying Computer Science & AI. 
+            Hello! I am a 4th year undergraduate student studying Computer Science & Artificial Intelligence. 
             I am passionate about coding, mathematics, and entrepreneurship. In my free time 
             you will find me either learning a new skill (completing a course, reading a book), 
             challenging myself (participating in competitions, doing competitive programming, 
@@ -93,17 +93,29 @@
       <!-- Education -->
       <section id="education" class="section container">
         <h2 class="section__title">Education</h2>
-      
+        
+        <div class="container__item">
+          <div class="container__left">
+            <h3 class="container__title">Cornell University</h3>
+            <p class="container__info">Ithaca, New York, USA</p>
+            <p class="container__info">Exchange Student</p>
+          </div>
+          <div class="container__right">
+            <p class="container__info">Fall 2024</p>
+          </div>
+        </div>
+
         <div class="container__item">
           <div class="container__left">
             <h3 class="container__title">IE University</h3>
+            <p class="container__info">Bachelor in Computer Science and Artificial Intelligence</p>
             <p class="container__info">Madrid, Spain</p>
             <p class="container__info">IE-Parents "Young Talented Leaders Scholarship program" - Full Ride</p>
-            <p class="container__info">Received 20 honors out of 27 taken classes</p>
+            <p class="container__info">Received 23 honors out of 31 taken classes</p>
           </div>
           <div class="container__right">
             <p class="container__info">2021 - 2025</p>
-            <p class="container__info">GPA: 9.58/10.0</p>
+            <p class="container__info">GPA: 9.53/10.0</p>
           </div>
         </div>
       
@@ -129,6 +141,29 @@
           <!-- Left Column -->
           <div class="container__left">
             <h3 class="container__title">Google</h3>
+            <p class="container__position">Software Engineer Intern</b> in Google Core Compute team</p>
+            <ul class="experience__description">
+              Investigated and proved the feasibility of semantically clustering API responses via a pipeline incorporating GenAI and other ML techniques:
+              <li>Prompted, validated, and used Gemini for generation of bulk responses.</li>
+              <li>Distilled knowledge of Gemini to BERT-base model for efficiency and better quality on the specific domain.</li>
+              <li>Fine-tuned BERT via contrastive learning.</li>
+              <li>Performed hierarchical clustering of embeddings and visualized results in user friendly display via T-SNE.</li>
+              Validated the results of each component of the pipeline via appropriate metrics (AUC, Accuracy, User Feedback session, etc) and documented all work and future improvements in a research-like paper.
+            </ul>
+          </div>
+      
+          <!-- Right Column -->
+          <div class="container__right">
+            <p class="container__dates">July 2023 – September 2023</p>
+          </div>
+        </div>
+        
+        <!-- Hidden Experience Items -->
+        <div id="hidden-experiences">
+        <div class="container__item">
+          <!-- Left Column -->
+          <div class="container__left">
+            <h3 class="container__title">Google</h3>
             <p class="container__position">STEP <b>Software Engineer Intern</b> in Google Compute Engine team</p>
             <ul class="experience__description">
               <li>Implemented a Fan-in scenario for a tracing system in GCE control plane, tracing 1,000,000+ new requests daily.
@@ -146,9 +181,6 @@
             <p class="container__dates">July 2023 – September 2023</p>
           </div>
         </div>
-        
-        <!-- Hidden Experience Items -->
-        <div id="hidden-experiences">
         <!-- Experience Item -->
         <div class="container__item">
           <!-- Left Column -->
@@ -234,6 +266,93 @@
         <h2 class="section__title">Projects</h2>
 
         <div class="projects__grid">
+          <!-- Github Recommender System -->
+          <div class="project">
+            <h3>Github Recommender System</h3>
+            <ul class="project__stack">
+              <li class="project__stack-item">Light Gradient Boosting Machine</li>
+              <li class="project__stack-item">Streamlit</li>
+              <li class="project__stack-item">ML Recommendations</li>
+              <li class="project__stack-item">Agile Software Development</li>
+            </ul>
+            <p class="project__description">
+              Embedded 1.2 million repositories and built a personalized recommender system using the LightGBM ML framework. The system was displayed via Streamlit and got featured on <b>Github Open Source Fridays</b>.
+            </p>
+            <img src="img/github_open_source.jpg" style="width: 90%;" />
+            <a
+              href="https://github.com/yourusername/github-recommender-system"
+              aria-label="Source Code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://youtu.be/your-video-id"
+              aria-label="Demo"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-youtube"></i>
+            </a>
+          </div>
+          <!-- 3D AI Story -->
+          <div class="project">
+            <h3>3D Story Builder with GenAI</h3>
+            <ul class="project__stack">
+              <li class="project__stack-item">GenAI pipeline building</li>
+              <li class="project__stack-item">text-to-music</li>
+              <li class="project__stack-item">3D - Unity</li>
+            </ul>
+            <p class="project__description">
+              Wrote a pipeline of GenAI, turning text input into an interactive 3D story experience. The project receives a textual story as an input,
+              using OpenAI API it is split into scenes which get transformed into:
+              <br>• Visual description for the scene used for environment 360° image generation model from Blockade Labs
+              <br>• Description for audio/music generation model from Meta
+              Everything gets stacked together in Unity as a 3D story.
+            </p>
+            <a
+              href="https://github.com/KTsula/Story_to_3DExperience"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a href="https://youtu.be/PX6hmdHNu-o"
+              aria-label="Demo" class="link link--icon">
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+          <!-- DEVOPS -->
+          <div class="project">
+            <h3>Full stack project - Banking Software</h3>
+            <ul class="project__stack">
+              <li class="project__stack-item">DevOps</li>
+              <li class="project__stack-item">Github Actions</li>
+              <li class="project__stack-item">Azure</li>
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">SQLAlchemy</li>
+              <li class="project__stack-item">Vue.js</li>
+              <li class="project__stack-item">Flask</li>
+              <li class="project__stack-item">Bicep</li>
+            </ul>
+            <p class="project__description">
+              Built upon the provided university class assignment in DevOps and deployed 
+              <a href="https://github.com/KTsula/Banking-Software-Back-End" style="color:blue">
+                Backend,
+              </a>
+              <a href="https://github.com/KTsula/Banking-Software-Front-End" style="color:blue">
+                Frontend,
+              </a>
+              and
+              <a href="https://github.com/KTsula/Banking-Software-Infra" style="color:blue">
+                Infrastructure
+              </a>
+              of a simple banking software. 
+              <br>
+              Deployed <b>Development</b> and <b>User Acceptance Testing</b> environments on Azure using Github Actions and Bicep.
+              <br>
+              <br>
+            </p>
+          </div>
           <!-- Kakuro -->
           <div class="project">
             <h3>Smart Agent - Kakuro Game Solver</h3>
@@ -282,38 +401,6 @@
               aria-label="Play Store" class="link link--icon">
               <i aria-hidden="true" class="fas fa-external-link-alt"></i>
             </a>
-          </div>
-          <!-- DEVOPS -->
-          <div class="project">
-            <h3>Full stack project - Banking Software</h3>
-            <ul class="project__stack">
-              <li class="project__stack-item">DevOps</li>
-              <li class="project__stack-item">Github Actions</li>
-              <li class="project__stack-item">Azure</li>
-              <li class="project__stack-item">Python</li>
-              <li class="project__stack-item">SQLAlchemy</li>
-              <li class="project__stack-item">Vue.js</li>
-              <li class="project__stack-item">Flask</li>
-              <li class="project__stack-item">Bicep</li>
-            </ul>
-            <p class="project__description">
-              Built upon the provided university class assignment in DevOps and deployed 
-              <a href="https://github.com/KTsula/Banking-Software-Back-End" style="color:blue">
-                Backend,
-              </a>
-              <a href="https://github.com/KTsula/Banking-Software-Front-End" style="color:blue">
-                Frontend,
-              </a>
-              and
-              <a href="https://github.com/KTsula/Banking-Software-Infra" style="color:blue">
-                Infrastructure
-              </a>
-              of a simple banking software. 
-              <br>
-              Deployed <b>Development</b> and <b>User Acceptance Testing</b> environments on Azure using Github Actions and Bicep.
-              <br>
-              <br>
-            </p>
           </div>
           <!-- GIVEEZY -->
           <div class="project">
